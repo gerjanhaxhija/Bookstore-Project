@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Catalog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="notes.html">To-Do</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="catalog">
+        <h2>Explore Our Catalog</h2>
+
+        <!-- Fiction Genre -->
+        <div class="genre">
+            <h3>Fiction</h3>
+            <div class="book" data-id="1">
+                <img src="./images/fiction_book1.jpg" alt="Fiction Book 1">
+                <h4>To Kill a Mockingbird</h4>
+                <p>Author: Harper Lee</p>
+                <p>Description: A captivating fiction book that takes you on an adventurous journey.</p>
+                <p>Rating: 4.5/5</p>
+                <p>Price: $19.99</p>
+                <button onclick="addToCart(1, 'Fiction Book Title 1', 19.99)">Add to Cart</button>
+            </div>
+            <!-- Add more fiction books as needed -->
+
+            <div class="book" data-id="2">
+                <img src="./images/fiction_book2.jpg" alt="Fiction Book 2">
+                <h4>The Alchemist</h4>
+                <p>Author: Paulo Coelho</p>
+                <p>Description: An intriguing fiction story that keeps you on the edge of your seat.</p>
+                <p>Rating: 4.2/5</p>
+                <p>Price: $24.99</p>
+                <button onclick="addToCart(2, 'Fiction Book Title 2', 24.99)">Add to Cart</button>
+            </div>
+            <!-- Add more fiction books as needed -->
+        </div>
+
+        <!-- Mystery Genre -->
+        <div class="genre">
+            <h3>Mystery</h3>
+            <div class="book" data-id="3">
+                <img src="./images/mystery_book1.jpg" alt="Mystery Book 1">
+                <h4>Da Vinci Code</h4>
+                <p>Author: Dan Brown</p>
+                <p>Description: A mysterious tale filled with twists and turns that will leave you guessing until the end.</p>
+                <p>Rating: 4.8/5</p>
+                <p>Price: $29.99</p>
+                <button onclick="addToCart(3, 'Mystery Book Title 1', 29.99)">Add to Cart</button>
+            </div>
+            <!-- Add more mystery books as needed -->
+
+            <div class="book" data-id="4">
+                <img src="./images/mystery_book2.png" alt="Mystery Book 2">
+                <h4>Crime and Punishment</h4>
+                <p>Author: Fyodor Dostoevsky</p>
+                <p>Description: Dive into a world of enigma and suspense with this gripping mystery novel.</p>
+                <p>Rating: 4.6/5</p>
+                <p>Price: $34.99</p>
+                <button onclick="addToCart(4, 'Mystery Book Title 2', 34.99)">Add to Cart</button>
+            </div>
+            <!-- Add more mystery books as needed -->
+        </div>
+
+        <!-- Science Fiction Genre -->
+        <div class="genre">
+            <h3>Science Fiction</h3>
+            <div class="book" data-id="5">
+                <img src="./images/scifi_book1.jpg" alt="Science Fiction Book 1">
+                <h4>Fahrenheit 451</h4>
+                <p>Author: Ray Bradbury</p>
+                <p>Description: Embark on an intergalactic journey with this mind-bending science fiction masterpiece.</p>
+                <p>Rating: 4.9/5</p>
+                <p>Price: $39.99</p>
+                <button onclick="addToCart(5, 'Science Fiction Book Title 1', 39.99)">Add to Cart</button>
+            </div>
+            <!-- Add more science fiction books as needed -->
+
+            <div class="book" data-id="6">
+                <img src="./images/scifi_book2.jpg" alt="Science Fiction Book 2">
+                <h4>Frankenstein</h4>
+                <p>Author: Mary Shelley</p>
+                <p>Description: Explore futuristic worlds and cutting-edge technology in this captivating science fiction novel.</p>
+                <p>Rating: 4.7/5</p>
+                <p>Price: $44.99</p>
+                <button onclick="addToCart(6, 'Science Fiction Book Title 2', 44.99)">Add to Cart</button>
+            </div>
+            <!-- Add more science fiction books as needed -->
+        </div>
+
+        <!-- Romance Genre -->
+        <div class="genre">
+            <h3>Romance</h3>
+            <div class="book" data-id="7">
+                <img src="./images/romance_book1.jpg" alt="Romance Book 1">
+                <h4>Pride and Prejudice</h4>
+                <p>Author: Jane Austen</p>
+                <p>Description: Pride and Prejudice is an 1813 novel of manners by English author Jane Austen.</p>
+                <p>Rating: 4.4/5</p>
+                <p>Price: $17.99</p>
+                <button onclick="addToCart(7, 'Romance Book Title 1', 17.99)">Add to Cart</button>
+            </div>
+            <!-- Add more romance books as needed -->
+
+            <div class="book" data-id="8">
+                <img src="./images/romance_book2.jpg" alt="Romance Book 2">
+                <h4>Happy Place</h4>
+                <p>Author: Emily Henry</p>
+                <p>Description: Experience the magic of love and the beauty of relationships in this enchanting romance novel.</p>
+                <p>Rating: 4.5/5</p>
+                <p>Price: $22.99</p>
+                <button onclick="addToCart(8, 'Romance Book Title 2', 22.99)">Add to Cart</button>
+            </div>
+            <!-- Add more romance books as needed -->
+        </div>
+
+        <!-- Biography Genre -->
+        <div class="genre">
+            <h3>Biography</h3>
+            <div class="book" data-id="9">
+                <img src="./images/biography_book1.jpg" alt="Biography Book 1">
+                <h4>Einstein: His Life and Universe</h4>
+                <p>Author: Walter Isaacson</p>
+                <p>Description: Dive into the rich history and accomplishments of another extraordinary individual in this biography.</p>
+                <p>Rating: 4.6/5</p>
+                <p>Price: $22.99</p>
+                <button onclick="addToCart(9, 'Biography Book Title 1', 22.99)">Add to Cart</button>
+            </div>
+            <!-- Add more biography books as needed -->
+
+            <div class="book" data-id="10">
+                <img src="./images/biography_book2.jpg" alt="Biography Book 2">
+                <h4>Steve Jobs</h4>
+                <p>Author: Walter Isaacson</p>
+                <p>Description: Discover the inspiring life story of an influential figure in this compelling biography.</p>
+                <p>Rating: 4.8/5</p>
+                <p>Price: $27.99</p>
+                <button onclick="addToCart(10, 'Biography Book Title 2', 27.99)">Add to Cart</button>
+            </div>
+            <!-- Add more biography books as needed -->
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Book Store. All rights reserved.</p>
+    </footer>
+
+    <script src="jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
